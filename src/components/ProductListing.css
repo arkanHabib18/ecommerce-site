@@ -1,0 +1,97 @@
+.product-listing {
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+  }
+  .font {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-adjust columns based on screen size */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Limits the grid to a maximum width for large screens */
+    margin: 0 auto; /* Ensures the grid is centered horizontally */
+  }
+  
+  .product-card {
+    background-color: black;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; /* Ensures cards have the same height */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  
+  .product-card h3 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  
+  .product-card p {
+    color: #ddd;
+    font-size: 1rem;
+  }
+  
+  .add-to-cart {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-to-cart:hover {
+    background-color: darkred;
+  }
+  
+  /* For medium-sized screens */
+  @media (max-width: 1200px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+  
+    .product-card {
+      height: 300px; /* Adjust for smaller cards */
+    }
+  }
+  
+  /* For mobile-sized screens */
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .product-card {
+      height: 250px;
+    }
+  }
+  
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');

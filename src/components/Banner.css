@@ -1,0 +1,58 @@
+.banner {
+    background: url('../assets/banner1.png') center/cover no-repeat;
+    height: 100vh; /* Full banner height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Enables positioning of child elements */
+    overflow: hidden; /* Ensures no overflow effects */
+  }
+  
+  .banner-content {
+    position: absolute; /* Covers the entire banner */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.795); /* Transparent overlay */
+    display: flex;
+    flex-direction: column; /* Ensures text and button are stacked */
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .banner-content:hover {
+    background: rgba(0, 0, 0, 0.895); /* Darkens the overlay on hover */
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .banner p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .cta-button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: darkred;
+    transform: scale(1.1); /* Enlarges button slightly */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adds shadow */
+  }
+  
